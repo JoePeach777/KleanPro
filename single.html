@@ -232,7 +232,7 @@
 
                     <div class="bg-light rounded p-5">
                         <h3 class="mb-4 section-title">Оставить комментарий</h3>
-                        <form>
+                        <form id="comment-form">
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
                                     <label for="name">Имя</label>
@@ -257,7 +257,7 @@
 
                 <div class="col-lg-4 mt-5 mt-lg-0">
                     <div class="d-flex flex-column text-center bg-secondary rounded mb-5 py-5 px-4">
-                        <img src="img/daniel.png" class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;">
+                        <img src="img/Daniel.png" class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;">
                         <h3 class="text-white mb-3">Даниил</h3>
                         <p class="text-white m-0">Занимается подготовкой аналитических и прикладных материалов в сфере клининговых и бытовых услуг. 
                             Его публикации основаны на актуальных исследованиях и ориентированы на потребности современного потребителя.</p>
@@ -524,7 +524,7 @@
 </script>
 
     <script>
-    const form = document.querySelector("form");
+    const form = document.getElementById("comment-form");
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const commentsContainer = document.getElementById("comments-container");
