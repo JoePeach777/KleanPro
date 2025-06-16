@@ -524,10 +524,12 @@
 </script>
 
     <script>
-    const form = document.getElementById("comment-form");
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const commentsContainer = document.getElementById("comments-container");
+const form = document.getElementById("comment-form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message"); // ← добавь эту строку
+const commentsContainer = document.getElementById("comments-container");
+
 
     // Загрузка комментариев из localStorage
     function loadComments() {
